@@ -1,0 +1,14 @@
+/* Global Styles (if needed, otherwise use Tailwind) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Example of a custom background that Tailwind might not easily handle */
+/*
+#home {
+    background-image: url('../assets/backgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; // Ensure text is readable on the background
+}
+*/

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Dev Infotech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center py-3 font-semibold text-lg shadow-md">
+        Learn More About Dev Infotech
+    </div>
+    <header class="shadow-lg sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-blue-200">
+        <div class="container mx-auto px-4 flex items-center justify-between py-3">
+            <a href="home.html" class="flex items-center space-x-2 group">
+                <img src="assets/dev-logo.png" alt="Dev Infotech Logo" class="h-10 w-10 rounded-full border-2 border-blue-500 shadow group-hover:scale-110 transition-transform duration-300 bg-white object-contain">
+                <span class="text-2xl font-extrabold text-blue-700 group-hover:text-blue-500 transition-colors duration-300 tracking-wide">Dev Infotech</span>
+            </a>
+            <nav>
+                <ul class="hidden md:flex items-center gap-2">
+                    <li><a href="home.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Home</a></li>
+                    <li><a href="products.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Products</a></li>
+                    <li class="relative group">
+                        <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition focus:outline-none" id="services-dropdown-btn">
+                            Services
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <ul id="services-dropdown" class="absolute left-0 mt-2 w-48 bg-white border border-blue-100 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <li><a href="services.html" class="block px-4 py-2 rounded-t-xl text-blue-700 hover:bg-blue-50 hover:text-blue-900">All Services</a></li>
+                            <li><a href="service-repair.html" class="block px-4 py-2 text-blue-700 hover:bg-blue-50 hover:text-blue-900">Computer Repair</a></li>
+                            <li><a href="service-consulting.html" class="block px-4 py-2 rounded-b-xl text-blue-700 hover:bg-blue-50 hover:text-blue-900">IT Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-blue-700 bg-blue-100 hover:bg-blue-200 hover:text-blue-900 transition">About Us</a></li>
+                    <li><a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Contact</a></li>
+                    <li><a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-green-700 border border-green-200 hover:bg-green-50 hover:text-green-900 transition">Login</a></li>
+                    <li><a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold text-yellow-700 border border-yellow-200 hover:bg-yellow-50 hover:text-yellow-900 transition">Sign Up</a></li>
+                </ul>
+                <!-- Mobile menu button -->
+                <button id="menu-toggle" class="md:hidden text-blue-700 focus:outline-none text-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-white/95 border-t border-blue-100 shadow hidden">
+            <ul class="flex flex-col space-y-2 p-4 text-lg font-semibold">
+                <li><a href="home.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Home</a></li>
+                <li><a href="products.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Products</a></li>
+                <li>
+                    <button class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition w-full text-left" id="mobile-services-dropdown-btn">
+                        Services
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <ul id="mobile-services-dropdown" class="ml-4 mt-2 bg-white border border-blue-100 rounded-xl shadow-lg hidden">
+                        <li><a href="services.html" class="block px-4 py-2 rounded-t-xl text-blue-700 hover:bg-blue-50 hover:text-blue-900">All Services</a></li>
+                        <li><a href="service-repair.html" class="block px-4 py-2 text-blue-700 hover:bg-blue-50 hover:text-blue-900">Computer Repair</a></li>
+                        <li><a href="service-consulting.html" class="block px-4 py-2 rounded-b-xl text-blue-700 hover:bg-blue-50 hover:text-blue-900">IT Consulting</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-blue-700 bg-blue-100 hover:bg-blue-200 hover:text-blue-900 transition">About Us</a></li>
+                <li><a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-blue-700 hover:bg-blue-100 hover:text-blue-900 transition">Contact</a></li>
+                <li><a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-green-700 border border-green-200 hover:bg-green-50 hover:text-green-900 transition">Login</a></li>
+                <li><a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-yellow-700 border border-yellow-200 hover:bg-yellow-50 hover:text-yellow-900 transition">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="h-[72px]"></div>
+    <main class="container mx-auto mt-8">
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-blue-900 mb-6 leading-tight drop-shadow-lg">About Dev Infotech</h1>
+                <p class="text-lg md:text-xl text-blue-800 mb-10 font-medium">Dev Infotech is a leading provider of computer sales, IT services, and technology solutions. Our mission is to empower businesses and individuals with reliable, innovative, and affordable technology.</p>
+            </div>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center items-center">
+                    <img src="assets/dev-logo.png" alt="Dev Infotech Logo" class="h-24 w-24 rounded-2xl border-4 border-cyan-400 shadow mb-4 bg-white object-contain">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Who We Are</h2>
+                    <p class="text-gray-700 mb-2">Founded in 2010, Dev Infotech has grown into a trusted name in the IT industry, serving hundreds of clients with a focus on quality, integrity, and customer satisfaction.</p>
+                    <p class="text-gray-700">Our team of certified professionals brings deep expertise in computer hardware, software, and business IT solutions.</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center items-center">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Our Values</h2>
+                    <ul class="text-gray-700 list-disc list-inside space-y-2 text-left">
+                        <li><span class="font-semibold text-blue-700">Customer First:</span> We prioritize your needs and satisfaction above all.</li>
+                        <li><span class="font-semibold text-blue-700">Innovation:</span> We embrace new technologies to deliver the best solutions.</li>
+                        <li><span class="font-semibold text-blue-700">Integrity:</span> We operate with honesty and transparency in every interaction.</li>
+                        <li><span class="font-semibold text-blue-700">Excellence:</span> We strive for the highest standards in our products and services.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+                <div class="bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-2xl shadow-lg p-8 flex flex-col justify-center items-center">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Our Team</h2>
+                    <p class="text-gray-700 mb-2">Our passionate team includes IT consultants, engineers, and support staff dedicated to helping you succeed. We believe in continuous learning and growth.</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 via-white to-blue-100 rounded-2xl shadow-lg p-8 flex flex-col justify-center items-center">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-2">Why Choose Us?</h2>
+                    <ul class="text-gray-700 list-disc list-inside space-y-2 text-left">
+                        <li>Over a decade of industry experience</li>
+                        <li>Certified and friendly professionals</li>
+                        <li>Comprehensive IT solutions under one roof</li>
+                        <li>Commitment to quality and support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-br from-gray-900 via-blue-900 to-blue-700 text-white pt-14 pb-8 mt-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-blue-400 opacity-20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-cyan-400 opacity-20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left relative z-10">
+            <div>
+                <div class="flex items-center justify-center md:justify-start mb-4">
+                    <img src="assets/dev-logo.png" alt="Dev Infotech Logo" class="h-14 w-14 rounded-2xl border-4 border-cyan-400 shadow-lg mr-3 bg-white object-contain">
+                    <span class="text-3xl font-extrabold text-cyan-200 tracking-wide drop-shadow">Dev Infotech</span>
+                </div>
+                <p class="text-cyan-100 mb-3 text-lg font-medium">Your trusted partner for computer sales & IT services.</p>
+                <div class="flex justify-center md:justify-start space-x-3 mt-4">
+                    <a href="#" class="bg-blue-800 hover:bg-cyan-500 p-2 rounded-full transition" aria-label="Facebook"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.632.771-1.632 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z"/></svg></a>
+                    <a href="#" class="bg-blue-800 hover:bg-cyan-500 p-2 rounded-full transition" aria-label="Twitter"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04A4.28 4.28 0 0016.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99C7.69 9.09 4.07 7.38 1.64 4.89c-.37.63-.58 1.36-.58 2.14 0 1.48.75 2.78 1.89 3.54-.7-.02-1.36-.21-1.94-.53v.05c0 2.07 1.47 3.8 3.42 4.19-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.68 2.11 2.9 3.97 2.93A8.6 8.6 0 012 19.54a12.13 12.13 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.37-.02-.56A8.72 8.72 0 0024 4.59a8.5 8.5 0 01-2.54.7z"/></svg></a>
+                    <a href="#" class="bg-blue-800 hover:bg-cyan-500 p-2 rounded-full transition" aria-label="LinkedIn"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-cyan-200 tracking-wide">Quick Links</h3>
+                <ul class="space-y-2 text-cyan-100">
+                    <li><a href="home.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="products.html" class="hover:text-cyan-400 transition">Products</a></li>
+                    <li><a href="services.html" class="hover:text-cyan-400 transition">Services</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-cyan-200 tracking-wide">Contact Info</h3>
+                <ul class="space-y-2 text-cyan-100">
+                    <li><span class="font-semibold">Phone:</span> <a href="tel:+1234567890" class="hover:text-cyan-400 transition">+1 (234) 567-890</a></li>
+                    <li><span class="font-semibold">Email:</span> <a href="mailto:info@devinfotech.com" class="hover:text-cyan-400 transition">info@devinfotech.com</a></li>
+                    <li><span class="font-semibold">Address:</span> 123 Main Street, Tech City</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-cyan-200 tracking-wide">Newsletter</h3>
+                <form class="flex flex-col sm:flex-row items-center gap-3 mt-2">
+                    <input type="email" placeholder="Your email address" class="w-full sm:w-auto flex-1 px-4 py-2 rounded-full border-none focus:ring-2 focus:ring-cyan-400 outline-none text-blue-900" required>
+                    <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold px-6 py-2 rounded-full transition-all">Subscribe</button>
+                </form>
+                <p class="text-cyan-100 text-xs mt-3">Get updates & offers. No spam.</p>
+            </div>
+        </div>
+        <div class="mt-10 text-center text-cyan-200 text-sm opacity-80">
+            &copy; 2024 Dev Infotech. Crafted with <span class="text-pink-400">&#10084;</span> by the Dev Infotech Team.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

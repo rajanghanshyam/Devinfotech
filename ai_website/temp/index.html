@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Sales and Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gradient-to-r from-blue-400 to-purple-500 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-semibold">PC Solutions</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="#products" class="hover:text-gray-200">Products</a></li>
+                    <li><a href="#services" class="hover:text-gray-200">Services</a></li>
+                    <li><a href="#about" class="hover:text-gray-200">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+
+        <section id="home" class="py-12 relative overflow-hidden">
+            <div id="hero-slider" class="relative">
+                <div class="hero-slide active">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-4">Your Trusted Partner for Computer Solutions</h1>
+                            <p class="text-gray-700 mb-6">We offer a wide range of high-quality computers, components, and expert services to meet all your technology needs.</p>
+                            <a href="#products" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Explore Products</a>
+                        </div>
+                        <div>
+                            <img src="assets/backgroundImage.jpg" alt="Computer Setup" class="rounded-lg shadow-md">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-4">Expert Computer Repairs & IT Consulting</h1>
+                            <p class="text-gray-700 mb-6">Fast, reliable repair and consulting services for home and business. Get your tech running smoothly today!</p>
+                            <a href="#services" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Our Services</a>
+                        </div>
+                        <div>
+                            <img src="assets/productImage.jpg" alt="Repair Service" class="rounded-lg shadow-md">
+                        </div>
+                    </div>
+                </div>
+                <button id="prev-slide" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow hover:bg-opacity-100 transition">&#8592;</button>
+                <button id="next-slide" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-2 shadow hover:bg-opacity-100 transition">&#8594;</button>
+            </div>
+        </section>
+
+        <section id="products" class="py-12">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <!-- Insert your image -->
+                    <img src="assets/productImage.jpg" alt="Product 1" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">High-Performance Desktop</h3>
+                    <p class="text-gray-600">Experience lightning-fast performance with our custom-built desktops.</p>
+                    <button class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Details</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <!-- Insert your image -->
+                    <img src="assets/productImage.jpg" alt="Product 2" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Gaming Laptop</h3>
+                    <p class="text-gray-600">Dominate the game with our powerful gaming laptops featuring the latest technology.</p>
+                    <button class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Details</button>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <!-- Insert your image -->
+                    <img src="assets/productImage.jpg" alt="Product 3" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Ergonomic Keyboard</h3>
+                    <p class="text-gray-600">Improve your typing experience with our ergonomic keyboards designed for comfort and efficiency.</p>
+                    <button class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-12">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">Computer Repair</h3>
+                    <p class="text-gray-700 mb-4">We offer comprehensive computer repair services, including hardware and software troubleshooting, virus removal, and data recovery.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Hardware Diagnostics</li>
+                        <li>Software Installation</li>
+                        <li>Virus and Malware Removal</li>
+                        <li>Data Recovery</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-semibold mb-4">IT Consulting</h3>
+                    <p class="text-gray-700 mb-4">Our IT consulting services help businesses optimize their technology infrastructure, improve efficiency, and reduce costs.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Network Design and Implementation</li>
+                        <li>Cloud Solutions</li>
+                        <li>Cybersecurity Assessments</li>
+                        <li>IT Strategy Development</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-12">
+            <h2 class="text-3xl font-semibold mb-6 text-center">About Us</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="text-gray-700">PC Solutions is a leading provider of computer sales and service, dedicated to delivering high-quality products and exceptional customer support. With years of experience in the industry, we have the expertise to meet all your technology needs.</p>
+                <p class="text-gray-700 mt-4">Our mission is to empower individuals and businesses with the technology they need to succeed. We are committed to providing innovative solutions, reliable service, and unparalleled customer satisfaction.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12">
+            <h2 class="text-3xl font-semibold mb-6 text-center">Contact Us</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                        <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                        <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                        <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 PC Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
